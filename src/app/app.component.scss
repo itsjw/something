@@ -1,0 +1,6 @@
+.grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 0 1fr;
+}

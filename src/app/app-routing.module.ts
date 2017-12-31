@@ -1,11 +1,21 @@
-import { HomeComponent } from './components/home/home.component';
+import { RecordsComponent } from './components/records/records.component';
+import { AnnualAccountComponent } from './components/annual-account/annual-account.component';
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
     {
         path: '',
-        component: HomeComponent
+        component: RecordsComponent
+    },
+    {
+        path: 'records',
+        component: RecordsComponent
+    },
+    {
+        path: 'annual-account',
+        component: AnnualAccountComponent
     }
 ];
 

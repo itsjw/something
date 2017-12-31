@@ -1,0 +1,93 @@
+<table border="1">
+    <tr>
+      <th>年</th>
+      <th>駐番</th>
+      <th>契約者名</th>
+      <th>1月</th>
+      <th>2月</th>
+      <th>3月</th>
+      <th>4月</th>
+      <th>5月</th>
+      <th>6月</th>
+      <th>7月</th>
+      <th>8月</th>
+      <th>9月</th>
+      <th>10月</th>
+      <th>11月</th>
+      <th>12月</th>
+      <th>合計(円)</th>
+      <th>預敷金</th>
+      <th>備考</th>
+    </tr>
+    
+    <tr *ngFor="let record of records">
+      <td>
+        {{record.year}}
+      </td>
+      <td>
+          {{record.number}}
+      </td>
+      <td>
+          {{record.userName}}
+      </td>
+      <td>
+          {{record.parkingFees.january}}
+      </td>
+      <td>
+          {{record.parkingFees.february}}
+      </td>
+      <td>
+          {{record.parkingFees.march}}
+      </td>
+      <td>
+          {{record.parkingFees.april}}
+      </td>
+      <td>
+          {{record.parkingFees.may}}
+      </td>
+      <td>
+          {{record.parkingFees.june}}
+      </td>
+      <td>
+          {{record.parkingFees.july}}
+      </td>
+      <td>
+          {{record.parkingFees.august}}
+      </td>
+      <td>
+          {{record.parkingFees.september}}
+      </td>
+      <td>
+          {{record.parkingFees.october}}
+      </td>
+      <td>
+          {{record.parkingFees.november}}
+      </td>
+      <td>
+          {{record.parkingFees.december}}
+      </td>
+      <td>
+          {{
+            record.parkingFees.january
+            + record.parkingFees.february
+            + record.parkingFees.march
+            + record.parkingFees.april
+            + record.parkingFees.may
+            + record.parkingFees.june
+            + record.parkingFees.july
+            + record.parkingFees.august
+            + record.parkingFees.september
+            + record.parkingFees.october
+            + record.parkingFees.november
+            + record.parkingFees.december
+          }}
+      </td>
+      <td>
+          {{record.updateMonth}}
+      </td>
+
+      <td>
+        {{record.note}}
+      </td>
+    </tr>
+</table>
